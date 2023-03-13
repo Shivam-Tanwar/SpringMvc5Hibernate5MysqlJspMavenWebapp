@@ -48,7 +48,13 @@
             <artifactId>hibernate-validator</artifactId>
             <version>${hibernate.validator}</version>
         </dependency>
-        
+        <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core -->
+<dependency>
+    <groupId>com.fasterxml.jackson.core</groupId>
+    <artifactId>jackson-core</artifactId>
+    <version>2.14.2</version>
+</dependency>
+
         <!-- JSTL Dependency -->
         <dependency>
             <groupId>javax.servlet.jsp.jstl</groupId>
