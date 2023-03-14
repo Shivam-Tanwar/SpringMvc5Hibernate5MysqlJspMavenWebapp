@@ -10,7 +10,7 @@ public interface DepartmentService {
 	
 	public void saveDepartment(Department theDepartment);
 	
-	public Department getDepartment(String deptName);
-	public void deleteDepartment(String deptName);
+	public Department getDepartment(int theID);
+	public void deleteDepartment(int theID);
 
 }

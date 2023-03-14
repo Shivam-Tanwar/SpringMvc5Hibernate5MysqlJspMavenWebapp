@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Spring MVC 5 - form handling | Java Guides</title>
+<title>Add department</title>
 <link href="<c:url value="/resources/css/bootstrap.min.css" />"
  rel="stylesheet">
 <script src="<c:url value="/resources/js/jquery-3.6.3.min.js" />"></script>
@@ -16,8 +16,8 @@
 <body>
  <div class="container">
   <div class="col-md-offset-2 col-md-7">
-   <h2 class="text-center">Spring MVC 5 + Hibernate 5 + JSP + MySQL
-    Example</h2>
+   
+  
    <div class="panel panel-info">
     <div class="panel-heading">
      <div class="panel-title">Add department</div>
@@ -30,17 +30,10 @@
       <form:hidden path="id" />
 
       <div class="form-group">
-       <label for="firstname" class="col-md-3 control-label">First
-        Name</label>
+       <label for="firstname" class="col-md-3 control-label">
+        DeptName</label>
        <div class="col-md-9">
-        <form:input path="firstName" cssClass="form-control" />
-       </div>
-      </div>
-
-      <div class="form-group">
-       <label for="email" class="col-md-3 control-label">Email</label>
-       <div class="col-md-9">
-        <form:input path="email" cssClass="form-control" />
+        <form:input path="deptName" cssClass="form-control" />
        </div>
       </div>
 

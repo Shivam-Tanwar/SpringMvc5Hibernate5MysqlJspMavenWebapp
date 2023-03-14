@@ -48,15 +48,15 @@ public class DepartmentController {
 	        return "redirect:/department/list";
 	    }
 	 @GetMapping("/updateForm")
-	    public String showFormForUpdate(@RequestParam("deptName") String deptName,
+	    public String showFormForUpdate(@RequestParam("deptName") int theID,
 	        Model theModel) {
-	        Department theDepartment = departmentService.getDepartment(deptName);
+	        Department theDepartment = departmentService.getDepartment(theID);
 	        theModel.addAttribute("department", theDepartment);
 	        return "department-form";
 	 }
 	 @GetMapping("/delete")
-	    public String deleteDepartment(@RequestParam("deptName") String deptName) {
-	        departmentService.deleteDepartment(deptName);
+	    public String deleteDepartment(@RequestParam("deptName") int theID) {
+	        departmentService.deleteDepartment(theID);
 	        return "redirect:/department/list";
 	    }
 	 }

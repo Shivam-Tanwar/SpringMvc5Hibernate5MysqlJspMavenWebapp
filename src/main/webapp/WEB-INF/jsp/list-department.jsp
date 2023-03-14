@@ -28,7 +28,7 @@
     <div class="panel-body">
      <table class="table table-striped table-bordered">
       <tr>
-       <th>First Name</th>
+       <th>Department Name</th>
        <th>Action</th>
       </tr>
 
